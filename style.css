@@ -1,0 +1,68 @@
+/* Hero Section with Image Background */
+.hero {
+    background-image: url('assets/sec-11.png'); /* Ganti dengan URL gambar Anda */
+    background-size: cover; /* Agar gambar menutupi seluruh area */
+    background-position: center; /* Pusatkan gambar */
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    height: 100vh; /* Tinggi penuh layar */
+    display: flex;
+    align-items: center; /* Posisi teks di tengah vertikal */
+    justify-content: center; /* Posisi teks di tengah horizontal */
+  }
+  
+  /* Teks Styling */
+  .hero h2 {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Efek bayangan agar teks lebih jelas */
+  }
+  
+  .hero p {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Profile Images */
+  .rounded-circle {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* Blockquote Styling */
+  .blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+  }
+  
+  .blockquote-footer {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+  /* Profile Carousel Styling */
+.carousel-item {
+    padding: 1rem;
+  }
+  
+  .carousel-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .carousel-item .col-md-3 {
+      flex: 0 0 50%; /* Setiap item memakan 50% lebar layar */
+      max-width: 50%;
+    }
+  }

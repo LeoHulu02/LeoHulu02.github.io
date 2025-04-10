@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alumni SMA 2020</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Alumni SMA 2020</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Alumni SMA 2020</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,140 +34,223 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero text-white py-5">
-    <div class="container text-center">
-      <h2 class="display-4 fw-bold">Jalin Pertemanan, Bangun Masa Depan</h2>
+  <section id="home" class="hero d-flex align-items-center text-white text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Jalin Pertemanan, Bangun Masa Depan</h1>
       <p class="lead">Mari bersama-sama menjaga hubungan baik antar alumni.</p>
     </div>
   </section>
 
- <!-- Profil Alumni Section -->
-<section id="profiles" class="py-5">
+  <!-- Profil Alumni Section -->
+  <section id="profiles" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Profil Alumni</h2>
-      <div class="row">
-        <div class="col-md-12">
-          <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/kar.jpg" alt="Alumni 1" class="rounded-circle mb-3">
-                    <h5>Mekar Nias Hulu</h5>
-                    <p>Mahasiswa</p>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/lenta.jpg" alt="Alumni 2" class="rounded-circle mb-3">
-                    <h5>Reftalenta Laia</h5>
-                    <p>Mahasiswa</p>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/anugrah.jpg" alt="Alumni 3" class="rounded-circle mb-3">
-                    <h5>Anugrah Selamat Laia S.H</h5>
-                    <p>Pengacara</p>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/leo.jpg" alt="Alumni 4" class="rounded-circle mb-3">
-                    <h5>Leo Saputra Hulu</h5>
-                    <p>Mahasiswa</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/nita.jpg" alt="Alumni 5" class="rounded-circle mb-3">
-                    <h5>Nitaria Amazihono</h5>
-                    <p>Designer Busana</p>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/juniar.jpg" alt="Alumni 6" class="rounded-circle mb-3">
-                    <h5>Juniar Dewi Mardalena Laia</h5>
-                    <p>Pengangguran Bro 🥵</p>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/efrian.jpg" alt="Alumni 7" class="rounded-circle mb-3">
-                    <h5>Efrian Handayani Amazihono</h5>
-                    <p>Mahasiswa</p>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/lester.jpg" alt="Alumni 8" class="rounded-circle mb-3">
-                    <h5>Yartina Fatemaluo</h5>
-                    <p>Perawat</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/juliana.jpg" alt="Alumni 5" class="rounded-circle mb-3">
-                    <h5>Juliana Baene</h5>
-                    <p>Designer Busana</p>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/sury.jpg" alt="Alumni 6" class="rounded-circle mb-3">
-                    <h5>Suryani Zendrato</h5>
-                    <p>Pengangguran Bro 🥵</p>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/mercy.jpg" alt="Alumni 7" class="rounded-circle mb-3">
-                    <h5>Mercyasna Laia</h5>
-                    <p>Mahasiswa</p>
-                  </div>
-                  <div class="col-6 col-md-3 text-center">
-                    <img src="/assets/toni.jpg" alt="Alumni 8" class="rounded-circle mb-3">
-                    <h5>Antonius Buulolo</h5>
-                    <p>Pengusaha 🥵</p>
-                  </div>
-                </div>
+      <div class="row g-4 justify-content-center">
+        <section id="profiles" class="py-5 bg-light">
+          <div class="container">
+            <h2 class="text-center fw-semibold mb-5">Profil Alumni</h2>
+            <div class="row mb-4">
+              <div class="col-md-6 mx-auto">
+                <input type="text" id="searchInput" class="form-control" placeholder="Cari nama alumni...">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#profileCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#profileCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="row g-4 justify-content-center">
+        
+              <!-- Mekar Nias Hulu -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/kar.jpg" alt="Mekar Nias Hulu" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Mekar Nias Hulu</h5>
+                    <p class="card-text text-muted">Mahasiswa</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Reftalenta Laia -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/lenta.jpg" alt="Reftalenta Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Reftalenta Laia</h5>
+                    <p class="card-text text-muted">Mahasiswa</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Anugrah Selamat Laia -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/anugrah.jpg" alt="Anugrah Selamat Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Anugrah Selamat Laia S.H</h5>
+                    <p class="card-text text-muted">Pengacara</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Leo Saputra Hulu -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/leo.jpg" alt="Leo Saputra Hulu" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Leo Saputra Hulu</h5>
+                    <p class="card-text text-muted">Mahasiswa</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Nitaria Amazihono -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/nita.jpg" alt="Nitaria Amazihono" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Nitaria Amazihono</h5>
+                    <p class="card-text text-muted">Designer Busana</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Juniar Dewi -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/juniar.jpg" alt="Juniar Dewi Mardalena Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Juniar Dewi Mardalena Laia</h5>
+                    <p class="card-text text-muted">Pengangguran 🥵</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Efrian Handayani -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/efrian.jpg" alt="Efrian Handayani Amazihono" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Efrian Handayani Amazihono</h5>
+                    <p class="card-text text-muted">Mahasiswa</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Yartina Fatemaluo -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/lester.jpg" alt="Yartina Fatemaluo" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Yartina Fatemaluo</h5>
+                    <p class="card-text text-muted">Perawat</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Juliana Baene -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/juliana.jpg" alt="Juliana Baene" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Juliana Baene</h5>
+                    <p class="card-text text-muted">Designer Busana</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Suryani Zendrato -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/sury.jpg" alt="Suryani Zendrato" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Suryani Zendrato</h5>
+                    <p class="card-text text-muted">Pengangguran 🥵</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Mercyasna Laia -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/mercy.jpg" alt="Mercyasna Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Mercyasna Laia</h5>
+                    <p class="card-text text-muted">Mahasiswa</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Antonius Buulolo -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/toni.jpg" alt="Antonius Buulolo" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Antonius Buulolo</h5>
+                    <p class="card-text text-muted">Pengusaha 🥵</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mewah Hati Laia -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/mewah.jpg" alt="Antonius Buulolo" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Mewah Hati Laia S.Pd</h5>
+                    <p class="card-text text-muted">Influencer</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jernih Hati Laia -->
+              <div class="col-md-3 col-sm-6">
+                <div class="card text-center shadow-sm border-0">
+                  <img src="/assets/jerni.jpg" alt="Antonius Buulolo" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title alumni-name">Jernih Hati Laia</h5>
+                    <p class="card-text text-muted">IRT</p>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
           </div>
-        </div>
+        </section>
+        
       </div>
     </div>
   </section>
 
-  <!-- Kalimat Inspiratif Section -->
-  <section id="quotes" class="bg-light py-5">
+  <!-- Kalimat Inspiratif -->
+  <section id="quotes" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Kalimat Inspiratif</h2>
+      <h2 class="text-center fw-semibold mb-4">Kalimat Inspiratif</h2>
       <div class="row">
         <div class="col-md-6">
-          <blockquote class="blockquote">
-            <p>"Masa lalu adalah fondasi, masa depan adalah harapan."</p>
-            <footer class="blockquote-footer">Alumni 2020</footer>
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"Masa lalu adalah fondasi, masa depan adalah harapan."</p>
+            <footer class="blockquote-footer mt-2">Alumni 2020</footer>
           </blockquote>
         </div>
         <div class="col-md-6">
-          <blockquote class="blockquote">
-            <p>"Bersama kita bisa mencapai lebih dari yang pernah kita bayangkan."</p>
-            <footer class="blockquote-footer">Alumni 2020</footer>
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"Bersama kita bisa mencapai lebih dari yang pernah kita bayangkan."</p>
+            <footer class="blockquote-footer mt-2">Alumni 2020</footer>
           </blockquote>
         </div>
       </div>
     </div>
   </section>
 
-
   <!-- Footer -->
-  <footer class="bg-dark text-white py-3">
-    <div class="container text-center">
-      <p>&copy; 2023 Alumni SMA 2020. All rights reserved.</p>
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2023 Alumni SMA 2020. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="text-white me-3 text-decoration-none">Instagram</a>
+        <a href="#" class="text-white text-decoration-none">LinkedIn</a>
+      </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS and Popper.js -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>

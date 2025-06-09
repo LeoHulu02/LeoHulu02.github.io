@@ -11,3 +11,10 @@ document.getElementById('searchInput').addEventListener('input', function () {
       }
     });
   });
+
+  function showAlumniDetail(name, role, imagePath, pesan) {
+    document.getElementById('modalName').innerText = name;
+    document.getElementById('modalRole').innerText = role;
+    document.getElementById('modalImage').src = imagePath;
+    document.getElementById('modalPesan').innerText = pesan;
+  }

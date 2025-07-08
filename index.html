@@ -6,28 +6,33 @@
   <title>Alumni SMA 2020</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Alumni SMA 2020</a>
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-graduation-cap me-2"></i>Alumni SMA 2020
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="#home" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="#home" class="nav-link active">Beranda</a></li>
           <li class="nav-item"><a href="#profiles" class="nav-link">Profil Alumni</a></li>
-          <li class="nav-item"><a href="#quotes" class="nav-link">Kalimat Inspiratif</a></li>
+          <li class="nav-item"><a href="#quotes" class="nav-link">Inspirasi</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
         </ul>
       </div>
     </div>
@@ -35,372 +40,329 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero d-flex align-items-center text-white text-center">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Jalin Pertemanan, Bangun Masa Depan</h1>
-      <p class="lead">Mari bersama-sama menjaga hubungan baik antar alumni.</p>
-    </div>
-  </section>
-
-  <!-- Profil Alumni Section -->
-  <section id="profiles" class="py-5 bg-light">
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        <section id="profiles" class="py-5 bg-light">
-          <div class="container">
-            <h2 class="text-center fw-semibold mb-5">Profil Alumni</h2>
-            <div class="row mb-4">
-              <div class="col-md-6 mx-auto">
-                <input type="text" id="searchInput" class="form-control" placeholder="Cari nama alumni...">
-              </div>
-            </div>
-            <div class="row g-4 justify-content-center">
-        
-              <!-- Mekar Nias Hulu -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Mekar Nias Hulu', 'Mahasiswa', '/assets/kar.jpg', 'Terus melangkah, walau pelan, asal tetap maju.' )"  
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/kar.jpg" alt="Mekar Nias Hulu" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Mekar Nias Hulu</h5>
-                    <p class="card-text text-muted">Mahasiswa</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Reftalenta Laia -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Reftalenta Laia', 'Mahasiswi', '/assets/lenta.jpg', 'Hidup bukan soal siapa yang tercepat, tapi siapa yang paling konsisten.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/lenta.jpg" alt="Reftalenta Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Reftalenta Laia</h5>
-                    <p class="card-text text-muted">Mahasiswi</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Anugrah Selamat Laia -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Anugrah Selamat Laia', 'Mahasiswa', '/assets/anugrah.jpg', 'Jangan takut gagal, takutlah untuk berhenti mencoba.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/anugrah.jpg" alt="Anugrah Selamat Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Anugrah Selamat Laia</h5>
-                    <p class="card-text text-muted">Pengacara</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Leo Saputra Hulu -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Leo Saputra Hulu', 'Mahasiswa', '/assets/hulu.png', 'Bahagia itu sederhana: bersyukur dan tetap berjuang.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/hulu.png" alt="Leo Saputra Hulu" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Leo Saputra Hulu</h5>
-                    <p class="card-text text-muted">Mahasiswa</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Nitaria Amazihono -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Nitaria Amazihono', 'Designer Busana', '/assets/nita.jpg', 'Setiap orang punya waktunya masing-masing, jangan bandingkan perjalananmu.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/nita.jpg" alt="Nitaria Amazihono" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Nitaria Amazihono</h5>
-                    <p class="card-text text-muted">Designer Busana</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Juniar Dewi -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Juniar Dewi Mardalena Laia', 'Belum Bekerja', '/assets/juniar.jpg', 'Mimpi besar dimulai dari langkah kecil yang dilakukan setiap hari.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/juniar.jpg" alt="Juniar Dewi Mardalena Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Juniar Dewi Mardalena Laia</h5>
-                    <p class="card-text text-muted">Belum Bekerja</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Efrian Handayani -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Efrian Handayani Amazihono', 'Mahasiswi', '/assets/efrian.jpg', 'Berani bermimpi, berani juga berjuang.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/efrian.jpg" alt="Efrian Handayani Amazihono" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Efrian Handayani Amazihono</h5>
-                    <p class="card-text text-muted">Mahasiswi</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Yartina Fatemaluo -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Yartina Fatemaluo', 'Mahasiswi', '/assets/lester.jpg', 'Hidup bukan hanya tentang hasil, tapi juga prosesnya.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/lester.jpg" alt="Yartina Fatemaluo" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Yartina Fatemaluo</h5>
-                    <p class="card-text text-muted">Perawat</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Juliana Baene -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Juliana Baene', 'Designer Busana', '/assets/juliana.jpg', 'Bukan pintar yang menang, tapi yang tidak mudah menyerah')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/juliana.jpg" alt="Juliana Baene" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Juliana Baene</h5>
-                    <p class="card-text text-muted">Designer Busana</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Suryani Zendrato -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Suryani Zendrato', 'Belum Bekerja', '/assets/sury.jpg', 'Jadilah versi terbaik dari dirimu, bukan tiruan orang lain.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/sury.jpg" alt="Suryani Zendrato" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Suryani Zendrato</h5>
-                    <p class="card-text text-muted">Belum Bekerja</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Mercyasna Laia -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Mercyasna Laia', 'Mahasiswi', '/assets/mercy.jpg', 'Keberhasilan tidak diukur dari apa yang dimiliki, tapi dari apa yang diperjuangkan.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/mercy.jpg" alt="Mercyasna Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Mercyasna Laia</h5>
-                    <p class="card-text text-muted">Mahasiswi</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Antonius Buulolo -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Antonius Bu\'ulolo', 'Mahasiswa', '/assets/toni.jpg', 'Keberhasilan tidak diukur dari apa yang dimiliki, tapi dari apa yang diperjuangkan.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/toni.jpg" alt="Antonius Bu'ulolo" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Antonius Bu'ulolo</h5>
-                    <p class="card-text text-muted">Mahasiswa</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Mewah Hati Laia -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Mewah Hati Laia', 'Influencer', '/assets/mewah.jpg', 'Selalu ada pelajaran di balik setiap kejadian.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/mewah.jpg" alt="Mewah Hati Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Mewah Hati Laia</h5>
-                    <p class="card-text text-muted">Influencer</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Jernih Hati Laia -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Jernih Hati Laia', 'IRT', '/assets/jerni.jpg', 'Percaya diri bukan berarti tahu segalanya, tapi yakin bisa belajar apa saja.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/jerni.jpg" alt="Jernih Hati Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Jernh Hati Laia</h5>
-                    <p class="card-text text-muted">IRT</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Noliana Bu'ulolo -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Noliana Bu\'ulolo', 'Karyawan', '/assets/noli.jpg', 'Tantangan adalah tanda bahwa kamu sedang tumbuh.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/noli.jpg" alt="Noliana Bu'ulolo" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Noliana Bu'ulolo</h5>
-                    <p class="card-text text-muted">Karyawan</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Yariani Bu'ulolo -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Yariani Buulolo', 'Influencer', '/assets/yari.jpg', 'Yang penting bukan dari mana kamu datang, tapi ke mana kamu melangkah.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/yari.jpg" alt="Yariani Bu'ulolo" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Yariani Bu'ulolo S.Pd</h5>
-                    <p class="card-text text-muted">Influencer</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Hepiman Laia -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Hepiman Laia', 'Perawat', '/assets/hepi.jpg', 'Kebaikan kecil yang konsisten, lebih bermakna dari niat besar yang tak dijalankan.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/hepi.jpg" alt="Hepiman Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">HepimaN Laia</h5>
-                    <p class="card-text text-muted">Perawat</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Sopan Hati Hulu -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Sopan Hati Hulu', 'Karyawan', '/assets/sopan.jpg', 'Hidup terlalu singkat untuk menunda mimpi.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/sopan.jpg" alt="Sopan Hati Hulu" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Sopan Hati Hulu</h5>
-                    <p class="card-text text-muted">Karyawan</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Niel Asriani Laia -->
-              <div class="col-md-3 col-sm-6" 
-                  onclick="showAlumniDetail('Niel Asriani Laia', 'Bidan', '/assets/niel.jpg', 'Jangan lupa bahagia, bahkan di tengah perjuangan.')" 
-                  role="button" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#alumniModal">
-                <div class="card text-center shadow-sm border-0">
-                  <img src="/assets/niel.jpg" alt="Niel Asriani Laia" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title alumni-name">Niel Asriani Laia S.Keb</h5>
-                    <p class="card-text text-muted">Bidan</p>
-                  </div>
-                </div>
-              </div>
-        
-            </div>
-          </div>
-        </section>
-        
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-4">Jalin Pertemanan, Bangun Masa Depan</h1>
+          <p class="lead mb-5">Mari bersama-sama menjaga hubungan baik antar alumni SMA 2020 untuk menciptakan peluang dan kolaborasi di masa depan.</p>
+          <a href="#profiles" class="btn btn-light btn-lg px-4 py-2 rounded-pill me-2">
+            <i class="fas fa-users me-2"></i>Lihat Alumni
+          </a>
+          <a href="#quotes" class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill">
+            <i class="fas fa-lightbulb me-2"></i>Inspirasi
+          </a>
+        </div>
+      </div>
+      <div class="floating d-none d-md-block" style="position: absolute; bottom: -50px; right: 50px; z-index: 1;">
+        <img src="https://cdn-icons-png.flaticon.com/512/3139/3139323.png" alt="Graduate" style="width: 150px; opacity: 0.8;">
       </div>
     </div>
   </section>
 
-  
+  <!-- Profil Alumni Section -->
+  <section id="profiles" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-heading mb-5">Profil Alumni</h2>
+      
+      <div class="row mb-4 justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="input-group">
+            <span class="input-group-text bg-white border-end-0"><i class="fas fa-search"></i></span>
+            <input type="text" id="searchInput" class="form-control search-box border-start-0" placeholder="Cari nama alumni...">
+          </div>
+        </div>
+      </div>
+      
+      <div class="row g-4 justify-content-center" id="alumniContainer">
+        <!-- Alumni cards will be generated here -->
+      </div>
+    </div>
+  </section>
+
   <!-- Detail Modal -->
-  <div class="modal fade" id="alumniModal" tabindex="-1" aria-labelledby="alumniModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered d-flex justify-content-center align-items-center vh-100">
-      <div class="modal-content w-100">
+  <div class="modal fade" id="alumniModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="alumniModalLabel">Profil Alumni</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title">Detail Alumni</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
-          <img id="modalImage" src="" alt="Alumni Image" class="rounded-circle mb-3" style="width: 250px; height: 250px; object-fit: cover;">
-          <h4 id="modalName"></h4>
-          <p id="modalRole" class="text-muted"></p>
-          <p id="modalPesan"></p>
+          <img id="modalImage" src="" alt="Alumni Image" class="modal-img rounded-circle mb-4">
+          <h4 id="modalName" class="mb-2"></h4>
+          <p id="modalRole" class="text-muted mb-4"></p>
+          <div class="modal-quote">
+            <p id="modalPesan" class="mb-0"></p>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-primary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Kalimat Inspiratif -->
-  <section id="quotes" class="py-5">
+  <section id="quotes" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center fw-semibold mb-4">Kalimat Inspiratif</h2>
-      <div class="row">
+      <h2 class="text-center section-heading mb-5">Kalimat Inspiratif</h2>
+      <div class="row g-4">
         <div class="col-md-6">
-          <blockquote class="blockquote text-center">
-            <p class="mb-0">"Masa lalu adalah fondasi, masa depan adalah harapan."</p>
-            <footer class="blockquote-footer mt-2">Alumni 2020</footer>
-          </blockquote>
+          <div class="quote-card">
+            <p class="quote-text">"Masa lalu adalah fondasi, masa depan adalah harapan. Yang terpenting adalah apa yang kita lakukan hari ini."</p>
+            <footer class="blockquote-footer mt-3 quote-author">Alumni 2020</footer>
+          </div>
         </div>
         <div class="col-md-6">
-          <blockquote class="blockquote text-center">
-            <p class="mb-0">"Bersama kita bisa mencapai lebih dari yang pernah kita bayangkan."</p>
-            <footer class="blockquote-footer mt-2">Alumni 2020</footer>
-          </blockquote>
+          <div class="quote-card">
+            <p class="quote-text">"Bersama kita bisa mencapai lebih dari yang pernah kita bayangkan. Kolaborasi adalah kunci kesuksesan."</p>
+            <footer class="blockquote-footer mt-3 quote-author">Alumni 2020</footer>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="quote-card">
+            <p class="quote-text">"Pendidikan bukan hanya tentang gelar, tapi tentang bagaimana kita tumbuh dan berkontribusi untuk masyarakat."</p>
+            <footer class="blockquote-footer mt-3 quote-author">Alumni 2020</footer>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="quote-card">
+            <p class="quote-text">"Kegagalan adalah guru terbaik. Yang membedakan orang sukses dan tidak adalah bagaimana mereka bangkit."</p>
+            <footer class="blockquote-footer mt-3 quote-author">Alumni 2020</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-heading mb-5">Hubungi Kami</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control py-3" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control py-3" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control py-3" rows="4" placeholder="Pesan Anda" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg px-4 py-2 rounded-pill">
+                <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
+  <footer>
     <div class="container">
-      <p class="mb-0">&copy; 2023 Alumni SMA 2020. All rights reserved.</p>
-      <div class="mt-2">
-        <a href="#" class="text-white me-3 text-decoration-none">Instagram</a>
-        <a href="#" class="text-white text-decoration-none">LinkedIn</a>
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <h5 class="mb-3"><i class="fas fa-graduation-cap me-2"></i>Alumni SMA 2020</h5>
+          <p class="mb-0">Menjalin silaturahmi, membangun masa depan bersama.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="mb-3">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <p class="mb-0">&copy; 2025 Alumni SMA 2020. All rights reserved.</p>
+        </div>
       </div>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  
+  <!-- Custom JS -->
+  <script>
+    // Alumni Data
+    const alumniData = [
+      {
+        name: "Mekar Nias Hulu",
+        role: "Mahasiswa",
+        image: "/assets/kar.jpg",
+        quote: "Terus melangkah, walau pelan, asal tetap maju."
+      },
+      {
+        name: "Reftalenta Laia",
+        role: "Mahasiswi",
+        image: "/assets/lenta.jpg",
+        quote: "Hidup bukan soal siapa yang tercepat, tapi siapa yang paling konsisten."
+      },
+      {
+        name: "Anugrah Selamat Laia",
+        role: "Pengacara",
+        image: "/assets/anugrah.jpg",
+        quote: "Jangan takut gagal, takutlah untuk berhenti mencoba."
+      },
+      {
+        name: "Leo Saputra Hulu",
+        role: "Mahasiswa",
+        image: "/assets/hulu.png",
+        quote: "Bahagia itu sederhana: bersyukur dan tetap berjuang."
+      },
+      {
+        name: "Nitaria Amazihono",
+        role: "Designer Busana",
+        image: "/assets/nita.jpg",
+        quote: "Setiap orang punya waktunya masing-masing, jangan bandingkan perjalananmu."
+      },
+      {
+        name: "Juniar Dewi Mardalena Laia",
+        role: "Belum Bekerja",
+        image: "/assets/juniar.jpg",
+        quote: "Mimpi besar dimulai dari langkah kecil yang dilakukan setiap hari."
+      },
+      {
+        name: "Efrian Handayani Amazihono",
+        role: "Mahasiswi",
+        image: "/assets/efrian.jpg",
+        quote: "Berani bermimpi, berani juga berjuang."
+      },
+      {
+        name: "Yartina Fatemaluo",
+        role: "Perawat",
+        image: "/assets/lester.jpg",
+        quote: "Hidup bukan hanya tentang hasil, tapi juga prosesnya."
+      },
+      {
+        name: "Geofan Juli Pratama Tafonao S.T",
+        role: "Teknik Sipil",
+        image: "/assets/geo.jpg",
+        quote: "Hidup bukan hanya tentang hasil, tapi juga prosesnya."
+      },
+      {
+        name: "Juliana Baene",
+        role: "Designer Busana",
+        image: "/assets/juliana.jpg",
+        quote: "Bukan pintar yang menang, tapi yang tidak mudah menyerah."
+      },
+      {
+        name: "Suryani Zendrato",
+        role: "Belum Bekerja",
+        image: "/assets/sury.jpg",
+        quote: "Jadilah versi terbaik dari dirimu, bukan tiruan orang lain."
+      },
+      {
+        name: "Mercyasna Laia",
+        role: "Mahasiswi",
+        image: "/assets/mercy.jpg",
+        quote: "Keberhasilan tidak diukur dari apa yang dimiliki, tapi dari apa yang diperjuangkan."
+      },
+      {
+        name: "Antonius Bu'ulolo",
+        role: "Mahasiswa",
+        image: "/assets/toni.jpg",
+        quote: "Keberhasilan tidak diukur dari apa yang dimiliki, tapi dari apa yang diperjuangkan."
+      },
+      {
+        name: "Mewah Hati Laia",
+        role: "Influencer",
+        image: "/assets/mewah.jpg",
+        quote: "Selalu ada pelajaran di balik setiap kejadian."
+      },
+      {
+        name: "Jernih Hati Laia",
+        role: "IRT",
+        image: "/assets/jerni.jpg",
+        quote: "Percaya diri bukan berarti tahu segalanya, tapi yakin bisa belajar apa saja."
+      },
+      {
+        name: "Noliana Bu'ulolo",
+        role: "Karyawan",
+        image: "/assets/noli.jpg",
+        quote: "Tantangan adalah tanda bahwa kamu sedang tumbuh."
+      },
+      {
+        name: "Yariani Buulolo",
+        role: "Influencer",
+        image: "/assets/yari.jpg",
+        quote: "Yang penting bukan dari mana kamu datang, tapi ke mana kamu melangkah."
+      },
+      {
+        name: "Hepiman Laia",
+        role: "Perawat",
+        image: "/assets/hepi.jpg",
+        quote: "Kebaikan kecil yang konsisten, lebih bermakna dari niat besar yang tak dijalankan."
+      },
+      {
+        name: "Sopan Hati Hulu",
+        role: "Karyawan",
+        image: "/assets/sopan.jpg",
+        quote: "Hidup terlalu singkat untuk menunda mimpi."
+      },
+      {
+        name: "Niel Asriani Laia",
+        role: "Bidan",
+        image: "/assets/niel.jpg",
+        quote: "Jangan lupa bahagia, bahkan di tengah perjuangan."
+      }
+    ];
+
+    // Generate Alumni Cards
+    function generateAlumniCards() {
+      const container = document.getElementById('alumniContainer');
+      container.innerHTML = '';
+      
+      alumniData.forEach(alumni => {
+        const card = document.createElement('div');
+        card.className = 'col-lg-3 col-md-4 col-sm-6';
+        card.innerHTML = `
+          <div class="alumni-card text-center p-4" 
+               onclick="showAlumniDetail('${alumni.name}', '${alumni.role}', '${alumni.image}', '${alumni.quote}')"
+               data-bs-toggle="modal" 
+               data-bs-target="#alumniModal">
+            <img src="${alumni.image}" alt="${alumni.name}" class="alumni-img rounded-circle mb-3">
+            <h5 class="alumni-name">${alumni.name}</h5>
+            <p class="alumni-role">${alumni.role}</p>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Show Alumni Detail in Modal
+    function showAlumniDetail(name, role, image, quote) {
+      document.getElementById('modalName').textContent = name;
+      document.getElementById('modalRole').textContent = role;
+      document.getElementById('modalImage').src = image;
+      document.getElementById('modalPesan').textContent = quote;
+    }
+
+    // Search Functionality
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      const cards = document.querySelectorAll('.alumni-card');
+      
+      cards.forEach(card => {
+        const name = card.querySelector('.alumni-name').textContent.toLowerCase();
+        const role = card.querySelector('.alumni-role').textContent.toLowerCase();
+        
+        if (name.includes(searchTerm) || role.includes(searchTerm)) {
+          card.parentElement.style.display = 'block';
+        } else {
+          card.parentElement.style.display = 'none';
+        }
+      });
+    });
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function() {
+      generateAlumniCards();
+    });
+  </script>
 </body>
 </html>
